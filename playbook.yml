@@ -1,0 +1,6 @@
+---
+- name: Install git
+  hosts: all, !local
+  become: true
+  roles:
+    - { role: geerlingguy.git }
